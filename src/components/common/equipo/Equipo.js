@@ -5,6 +5,12 @@ import './Equipo.css';
 import Icon  from '@material-ui/core/Icon';
 
 class Equipo extends Component {
+
+  state = {
+    fav: { value: 'star'}
+  }
+
+
   render() {
     return (
       <div>
