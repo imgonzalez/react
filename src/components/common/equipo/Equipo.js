@@ -19,7 +19,7 @@ class Equipo extends React.Component {
     return (
       <div>
         <img className="team-logo" src={this.props.logo} alt={this.props.nombre} />
-        <Icon onClick={ this.setFav } className={this.state.fav.value}>star_rate</Icon> 
+        <Icon onClick={ this.setFav.bind( this ) } className={this.state.fav.value}>star_rate</Icon> 
       </div>
     );
   }
