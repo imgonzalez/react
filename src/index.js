@@ -8,10 +8,9 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 // Estilos
 import './index.css';
 
-// React.Componentes
+// Componentes
 import Header from './components/common/header/Header';
-import Liga from './components/liga/Liga';
-import Calendario from './components/calendario/Calendario';
+import Router from "./Router";
 
 
 // The CODE!
@@ -21,8 +20,7 @@ const Root = () => {
             <CssBaseline />
             <Header />
             <div className="contenedor">
-                <Liga />
-                <Calendario />
+                <Router />
             </div>
         </div>
     )
