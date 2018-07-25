@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // Material
 import Card from '@material-ui/core/Card';
@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 // Estilos
 import './Jugador.css';
 
-class Jugador extends React.Component {
+class Jugador extends Component {
     render() {
         return (
             <div>

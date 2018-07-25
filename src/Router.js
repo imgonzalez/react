@@ -9,7 +9,8 @@ const Router = () => (
         <Switch>
             <Route exact path='/' component={Liga} />
             <Route path='/liga' component={Liga} />
-            <Route path='/calendario' component={Calendario} />
+            <Route path='/calendario/:equipo' component={Calendario} />
+            <Route path='/calendarios' component={Calendario} />
         </Switch>
     </BrowserRouter>
 )

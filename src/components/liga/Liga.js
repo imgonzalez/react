@@ -31,7 +31,7 @@ class Liga extends Component {
           <Equipo nombre="Tiburones" logo={LogoTiburones} />
         </div>
 
-        <Button variant="raised" component={Link} to="/calendario" color="secondary">Ir al calendario</Button>
+        <Button variant="raised" component={Link} to="/calendario/felinos" color="secondary">Ir al calendario</Button>
 
         <div className="lista-jugadores">
           <Jugador nombre="Sergio" foto={FotoSergio} />

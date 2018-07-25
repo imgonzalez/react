@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // Estilos
 import './Calendario.css';
 
-// React.Componentes
+// Componentes
 import Juego from './../common/juego/Juego';
 
 // Imagenes
@@ -12,10 +12,11 @@ import LogoPiratas from './../../assets/logos/piratas.png';
 import LogoTiburones from './../../assets/logos/tiburones.png';
 
 
-class Calendario extends React.Component {
+class Calendario extends Component {
     render() {
         return (
             <div className="calendarios">
+                Equipo: {this.props.match.params.equipo}
                 <Juego
                     localNombre="Felinos"
                     localLogo={LogoFelinos}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // Material
 import Card from '@material-ui/core/Card';
@@ -15,7 +15,7 @@ import Equipo from './../equipo/Equipo';
 // Imagenes
 import Stadium from './../../../assets/stadium.png';
 
-class Juego extends React.Component {
+class Juego extends Component {
     render() {
         return (
             <div className="juegos">

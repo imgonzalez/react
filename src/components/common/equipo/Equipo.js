@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // Estilos
 import './Equipo.css';
 
-class Equipo extends React.Component {
+class Equipo extends Component {
   render() {
     return (
       <div>
