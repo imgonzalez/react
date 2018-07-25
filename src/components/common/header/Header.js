@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 
 import './Header.css';
 
-class Header extends React.Component {
+class Header extends Component {
     render() {
         return (
             <div className="app-bar">
@@ -18,8 +18,12 @@ class Header extends React.Component {
 
                         </Typography>
 
-                        <Button color="inherit" >Equipos</Button>
-                        <Button color="inherit" >Calendarios</Button>
+                        <Button color="inherit" >
+                            <a href="/liga">Equipos</a>
+                        </Button>
+                        <Button color="inherit" >
+                            <a href="/calendario">Calendarios</a>
+                        </Button>
 
                     </Toolbar>
                 </AppBar>
