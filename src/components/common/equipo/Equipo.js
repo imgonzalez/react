@@ -25,6 +25,14 @@ class Equipo extends React.Component {
 
   }
 
+  componentDidUpdate() {
+    console.log(this.props)
+    console.log(this.state.fav)
+
+    localStorage.setItem(this.props.nombre, JSON.stringify( this.state.fav ) );
+
+  }
+
   render() {
     return (
       <div>
