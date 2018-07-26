@@ -13,6 +13,16 @@ class Equipo extends React.Component {
 
   setFav() {
     console.log('Favorito :D');
+
+    //1. Respaldo del estado
+    const fav = { ...this.state.fav };
+
+    //2. Modificamos el valor en respaldo
+    fav.value = fav.value === 'star' ? 'star_selected' : 'star';
+
+    //3. Recargamos estado
+    this.setState({ fav });
+
   }
 
   render() {
