@@ -27,15 +27,22 @@ import equiposJSON from '../../assets/data/equipos.json';
 class Liga extends Component {
 
   state = {
-    equipos : []
+    equipos : [],
+    jugadores: []
   }
 
   componentDidMount() {
     let equipos = { ...this.state.equipos };
-
     equipos = equiposJSON;
-
     this.setState({ equipos })
+
+    fetch('https://api-mi-liga.now.sh/api/jugadores')
+    .then( (res) => res.json() )
+    .then( data =>{
+      this.setState( { jugadores: data })
+    })
+
+
   }
 
 
