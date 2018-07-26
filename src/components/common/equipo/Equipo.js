@@ -12,7 +12,7 @@ class Equipo extends React.Component {
   }
 
   setFav() {
-    console.log('Favorito :D');
+    //console.log('Favorito :D');
 
     //1. Respaldo del estado
     const fav = { ...this.state.fav };
@@ -26,11 +26,11 @@ class Equipo extends React.Component {
   }
 
   componentDidMount() {
-    console.log('Done!')
-    console.log(this.props.nombre)
+    //console.log('Done!')
+    //console.log(this.props.nombre)
 
     const localFavs = localStorage.getItem(this.props.nombre)
-    console.log(localFavs)
+    //console.log(localFavs)
 
     if(localFavs) {
       this.setState({
@@ -40,8 +40,8 @@ class Equipo extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log(this.props)
-    console.log(this.state.fav)
+    //console.log(this.props)
+    //console.log(this.state.fav)
 
     localStorage.setItem(this.props.nombre, JSON.stringify( this.state.fav ) );
 
