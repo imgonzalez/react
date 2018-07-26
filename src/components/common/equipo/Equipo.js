@@ -25,6 +25,20 @@ class Equipo extends React.Component {
 
   }
 
+  componentDidMount() {
+    console.log('Done!')
+    console.log(this.props.nombre)
+
+    const localFavs = localStorage.getItem(this.props.nombre)
+    console.log(localFavs)
+
+    if(localFavs) {
+      this.setState({
+        fav: JSON.parse(localFavs)
+      })
+    }
+  }
+
   componentDidUpdate() {
     console.log(this.props)
     console.log(this.state.fav)
